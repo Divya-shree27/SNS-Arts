@@ -30,23 +30,23 @@ headerTemplate.innerHTML = `
 
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="/" class="flex items-center space-x-3">
-                    <img src="/static/images/Logo.png" alt="Dr. SNS Rajalakshmi College of Arts and Science Logo" class="h-16 w-auto">
+        <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="flex items-center space-x-2 flex-shrink-0">
+                    <img src="/static/images/Logo.png" alt="Dr. SNS Rajalakshmi College of Arts and Science Logo" class="h-12 w-auto">
                     <div>
-                        <h1 class="text-xl font-bold text-gray-900">Dr. SNS Rajalakshmi College of Arts and Science</h1>
+                        <h1 class="text-base font-bold text-gray-900 leading-tight whitespace-nowrap">Dr. SNS Rajalakshmi College of Arts and Science</h1>
                         <p class="text-xs text-gray-500">Autonomous | NAAC A+</p>
                     </div>
                 </a>
 
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="/" class="text-gray-700 hover:text-[#B0CB1F] font-medium">Home</a>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="/" class="text-gray-700 hover:text-[#B0CB1F] font-medium text-base">Home</a>
 
                     
                     <!-- Programs Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center h-20">
+                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center h-16 text-base">
                             Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div
@@ -59,53 +59,49 @@ headerTemplate.innerHTML = `
                     </div>
                     <!-- Infrastructure Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center">
+                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center text-base">
                             Infrastructure <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div
                             class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-0 z-50">
                             <a href="/facilities"
-                                class="block px-4 py-2 hover:bg-red-50 text-gray-700">Facilities</a>
-                            <a href="/gallery" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Gallery</a>
-                            <a href="/transport" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Transport</a>
+                                class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Facilities</a>
+                            <a href="/gallery" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Gallery</a>
+                            <a href="/transport" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Transport</a>
                         </div>
                     </div>
 
                     <!-- Beyond Academics Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center">
+                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center text-base">
                             Beyond Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div
-                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
-                            <a href="/sports-clubs" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Sports &
-                                Clubs</a>
-                            <a href="/innovation" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Innovation
-                                Hub</a>
-                            <a href="/events" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Events &
-                                Celebrations</a>
-                            <a href="/success-stories" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Success
-                                Stories</a>
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-52 mt-0 z-50">
+                            <a href="/sports-clubs" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Sports & Clubs</a>
+                            <a href="/innovation" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Innovation Hub</a>
+                            <a href="/events" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Events & Celebrations</a>
+                            <a href="/success-stories" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Success Stories</a>
                         </div>
                     </div>
 
                     <!-- Meet Us Dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center">
+                        <button class="text-gray-700 hover:text-[#B0CB1F] font-medium flex items-center text-base">
                             Meet Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div
-                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
-                            <a href="/about" class="block px-4 py-2 hover:bg-red-50 text-gray-700">About Us</a>
-                            <a href="/contact" class="block px-4 py-2 hover:bg-red-50 text-gray-700">Contact Us</a>
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-52 mt-0 z-50">
+                            <a href="/about" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">About Us</a>
+                            <a href="/contact" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Contact Us</a>
                             <a href="/mandatory-disclosure"
-                                class="block px-4 py-2 hover:bg-red-50 text-gray-700">Mandatory Disclosure</a>
+                                class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Mandatory Disclosure</a>
                         </div>
                     </div>
 
                     <a href="/admissions"
-                        class="bg-[#B0CB1F] hover:bg-[#91A61A] text-white px-6 py-3 rounded-lg font-bold transition">
-                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                        class="bg-[#B0CB1F] hover:bg-[#91A61A] text-white px-4 py-2 rounded-lg font-bold transition text-base whitespace-nowrap">
+                        Enquiry Now <i class="fas fa-arrow-right ml-1"></i>
                     </a>
                 </div>
 

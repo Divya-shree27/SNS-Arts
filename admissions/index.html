@@ -331,7 +331,8 @@
 
 
             <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Admissions 2026-27</h1>
-            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Begin Your Student's Journey to
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Begin Your Student's Journey
+                to
                 Excellence</p>
 
             <!-- Decorative Element -->
@@ -358,7 +359,8 @@
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Register</h3>
-                        <p class="text-gray-700">Visit college on any working day between 9:00 AM to 5:00 PM and register
+                        <p class="text-gray-700">Visit college on any working day between 9:00 AM to 5:00 PM and
+                            register
                             for your student's admission.</p>
                     </div>
                 </div>
@@ -398,142 +400,110 @@
         </div>
     </section>
 
+
     <section class="py-16 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center">Admission and Enquiry Form</h3>
+                <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Admission and Enquiry Form</h3>
 
-                <!-- Bitrix24 Form with Custom Styling -->
-                <style>
-                    /* Bitrix Form Custom Styles */
-                    .b24-form-wrapper {
-                        background: transstakeholder !important;
-                        border: none !important;
-                        padding: 0 !important;
-                        box-shadow: none !important;
-                    }
+                <form id="enquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
 
-                    .b24-form-header {
-                        display: none !important;
-                    }
+                    <input type="text" name="name" required placeholder="Name *"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition">
 
-                    .b24-form-field {
-                        margin-bottom: 24px !important;
-                    }
+                    <input type="date" name="dob" required placeholder="Date of Birth *"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition text-gray-500">
 
-                    /* Remove Bitrix auto separators */
-                    .b24-form-separator,
-                    .b24-form-field-separator,
-                    .b24-form-field::before,
-                    .b24-form-field::after {
-                        display: none !important;
-                        content: none !important;
-                        height: 0 !important;
-                        border: none !important;
-                    }
+                    <input type="tel" name="mobile" required placeholder="Mobile Number *"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition">
 
-                    /* Hide labels visually but keep for Bitrix logic */
-                    .b24-form-control-label {
-                        position: absolute !important;
-                        opacity: 0 !important;
-                        pointer-events: none !important;
-                    }
+                    <select name="programme" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition bg-white text-gray-500">
+                        <option value="">Programme Interested In *</option>
+                        <optgroup label="UG Programmes">
+                            <option>BBA</option>
+                            <option>BBA (Computer Application)</option>
+                            <option>BCA</option>
+                            <option>B.Com.</option>
+                            <option>B.Com. (Computer Application)</option>
+                            <option>B.Com. (Information Technology)</option>
+                            <option>B.Com. Digital Marketing &amp; Data Mining</option>
+                            <option>B.Com. (Professional Accounting)</option>
+                            <option>B.Sc. (Computer Science)</option>
+                            <option>B.Sc. CS (AI and Data Science)</option>
+                            <option>B.Sc. CS with Cyber Security</option>
+                            <option>B.Sc. CS with Data Analytics</option>
+                            <option>B.Sc. CS (Data Science &amp; Visualisation)</option>
+                            <option>B.Sc. CS (Agentic AI)</option>
+                            <option>B.Sc. CS (Generative AI)</option>
+                            <option>B.Sc. (Costume Design and Fashion)</option>
+                            <option>B.Sc. (Information Technology)</option>
+                            <option>B.Sc. CS (Full Stack Web Development)</option>
+                            <option>B.Sc. Psychology</option>
+                        </optgroup>
+                        <optgroup label="PG Programmes">
+                            <option>MBA</option>
+                            <option>MCA</option>
+                            <option>M.Sc. Computer Science</option>
+                            <option>M.Sc. Mathematics</option>
+                            <option>M.Com.</option>
+                            <option>M.Com. (CA)</option>
+                            <option>M.A. English Literature</option>
+                        </optgroup>
+                        <optgroup label="Research Programmes">
+                            <option>M.Phil. (Computer Science)</option>
+                            <option>M.Phil. (Management)</option>
+                            <option>M.Phil. (Commerce)</option>
+                            <option>M.Phil. (Tamil)</option>
+                            <option>M.Phil. (English)</option>
+                            <option>M.Phil. (Library Science)</option>
+                        </optgroup>
+                        <optgroup label="Ph.D Programmes">
+                            <option>Ph.D (Computer Science)</option>
+                            <option>Ph.D (Management)</option>
+                            <option>Ph.D (Commerce)</option>
+                            <option>Ph.D (Tamil)</option>
+                            <option>Ph.D (English)</option>
+                            <option>Ph.D (Library and Information Science)</option>
+                        </optgroup>
+                    </select>
 
-                    /* Input styling */
-                    .b24-form-control {
-                        width: 100% !important;
-                        background: #ffffff !important;
-                        border: 1px solid #dfe3e8 !important;
-                        border-radius: 14px !important;
-                        padding: 16px 18px !important;
-                        font-size: 15px !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                        color: #111 !important;
-                        box-shadow: none !important;
-                    }
+                    <input type="text" name="parent" required placeholder="Parent / Guardian Name *"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition">
 
-                    .b24-form-control::placeholder {
-                        color: #9aa0a6 !important;
-                        font-weight: 400;
-                    }
+                    <input type="tel" name="altcontact" placeholder="Alternative Contact No"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition">
 
-                    .b24-form-control:focus {
-                        border-color: #111 !important;
-                        outline: none !important;
-                    }
+                    <textarea name="address" rows="2" placeholder="Address *" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#B0CB1F] transition resize-none"></textarea>
 
-                    /* Dropdown styling */
-                    .b24-form-dropdown {
-                        border-radius: 14px !important;
-                        border: 1px solid #fcfcfc !important;
-                        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
-                    }
+                    <!-- Call Me Button -->
+                    <a href="tel:+914222449900"
+                        class="w-full flex items-center justify-center bg-[#B0CB1F] hover:bg-[#91A61A] text-white font-extrabold py-5 rounded-lg text-2xl tracking-wide transition-all duration-300 shadow-lg mt-2">
+                        Call me!!!
+                    </a>
 
-                    .b24-form-dropdown-item {
-                        padding: 14px 18px !important;
-                        font-size: 15px !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                    }
+                </form>
 
-                    .b24-form-dropdown-item:hover {
-                        background: #f5f6f8 !important;
-                    }
-
-                    /* Submit button */
-                    .b24-form-btn {
-                        width: 100% !important;
-                        margin-top: 28px !important;
-                        padding: 18px !important;
-                        border-radius: 16px !important;
-                        background: #B0CB1F !important;
-                        color: #000 !important;
-                        font-size: 18px !important;
-                        font-weight: 600 !important;
-                        border: none !important;
-                        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-                        cursor: pointer !important;
-                        transition: all 0.3s ease !important;
-                    }
-
-                    .b24-form-btn:hover {
-                        background: #cc1a20 !important;
-                        transform: translateY(-1px);
-                    }
-
-                    /* Footer text */
-                    .b24-form-sign {
-                        margin-top: 20px !important;
-                        font-size: 13px !important;
-                        color: #9aa0a6 !important;
-                    }
-                </style>
-
-                <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
-                    (function (w, d, u) {
-                        var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 180000 | 0);
-                        var h = d.getElementsByTagName('script')[0]; h.stakeholderNode.insertBefore(s, h);
-                    })(window, document, 'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
-                </script>
-
-                <script>
-                    /* Placeholder + Asterisk Fix */
-                    setTimeout(function () {
-                        document.querySelectorAll('.b24-form-field').forEach(function (field) {
-                            const label = field.querySelector('.b24-form-control-label');
-                            const input = field.querySelector('.b24-form-control');
-
-                            if (label && input) {
-                                let text = label.textContent.replace(/\s*\*$/, '').trim();
-                                let required = label.textContent.includes('*');
-                                input.placeholder = required ? text + ' *' : text;
-                            }
-                        });
-                    }, 500);
-                </script>
+                <!-- Success Message -->
+                <div id="form-success" class="hidden text-center py-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-green-500 text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Thank You!</h4>
+                    <p class="text-gray-600">Your enquiry has been submitted. We'll contact you shortly.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('enquiry-form').classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        }
+    </script>
 
     <app-footer></app-footer>
 </body>
