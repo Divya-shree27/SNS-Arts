@@ -247,8 +247,8 @@ footerTemplate.innerHTML = `
                                     class="fas fa-phone mr-2"></i>Admission: +91 90036 55855</a></li>
                         <li><a href="tel:+919566423456" class="hover:text-white transition"><i
                                     class="fas fa-phone mr-2"></i>Call: +91 95664 23456</a></li>
-                        <li><a href="mailto:snsct@snsgroups.com" class="hover:text-white transition"><i
-                                    class="fas fa-envelope mr-2"></i>snsct@snsgroups.com</a></li>
+                        <li><a href="mailto:office@drsnsrcas.ac.in" class="hover:text-white transition"><i
+                                    class="fas fa-envelope mr-2"></i>office@drsnsrcas.ac.in</a></li>
                         <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i
                                     class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                     </ul>
@@ -257,7 +257,7 @@ footerTemplate.innerHTML = `
                             class="w-10 h-10 bg-gray-800 hover:bg-[#B0CB1F] rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/snsacademyorg" target="_blank"
+                        <a href="https://www.instagram.com/snsinstitutions" target="_blank"
                             class="w-10 h-10 bg-gray-800 hover:bg-[#B0CB1F] rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-instagram"></i>
                         </a>
@@ -265,7 +265,7 @@ footerTemplate.innerHTML = `
                             class="w-10 h-10 bg-gray-800 hover:bg-[#B0CB1F] rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.linkedin.com/College/snsinstitutions/" target="_blank"
+                        <a href="https://www.linkedin.com/company/snsinstitutions/" target="_blank"
                             class="w-10 h-10 bg-gray-800 hover:bg-[#B0CB1F] rounded-lg flex items-center justify-center transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
@@ -286,12 +286,12 @@ footerTemplate.innerHTML = `
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
     
     <!-- Instagram Floating Icon -->
-    <a href="https://www.instagram.com/snsacademy" class="instagram-float" target="_blank" rel="noopener noreferrer"
+    <a href="https://www.instagram.com/snsinstitutions" class="instagram-float" target="_blank" rel="noopener noreferrer"
         title="Follow us on Instagram">
         <i class="fab fa-instagram"></i>
     </a>
     <!-- WhatsApp Floating Icon -->
-    <a href="https://wa.me/919629937861" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    <a href="https://wa.me/919003655855" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
