@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../static/images/Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | SNS College of Technology - Autonomous | NAAC A++ | NBA</title>
+    <meta name="description"
+        content="Discover how SNS College of Technology students are redefining excellence through Design Thinking and innovation. Autonomous, NAAC A++, NBA Accredited.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script src="/static/js/components.js" defer></script>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/SNS College Web/Success.webp" alt="Success Stories"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Success Stories</span>
+                </div>
+            </nav>
+
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Success Stories</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Celebrating the achievements,
+                breakthroughs, and inspiring journeys of our students who are making their mark in the world</p>
+
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-[#E31E24] rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+
+
+    <!-- Featured Story -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-red-100 to-[#E31E24]/20 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="h-96 lg:h-auto relative overflow-hidden">
+                        <img src="/static/useimg/A moment of immense pride!SNS Alumni students have clinched 1st place in the 3rd Division – Coi.webp"
+                            alt="Coimbatore Cricket League Champions" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transstakeholder"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-trophy mr-2"></i>
+                                <span class="text-sm font-semibold">Champions</span>
+                            </div>
+                            <p class="text-xs opacity-90">Coimbatore Cricket League (Season 2024–2025)</p>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div
+                            class="inline-flex items-center bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 w-fit">
+                            <i class="fas fa-star mr-2"></i>
+                            Featured Story
+                        </div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">Cricket Champions - 4th Consecutive Time!</h2>
+                        <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                            SNS Alumni students have clinched 1st place in the 3rd Division – Coimbatore Cricket League
+                            (Season 2024–2025),
+                            emerging as Champions for the 4th consecutive time. A moment of immense pride for the entire
+                            SNS family!
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <span class="font-semibold mr-4">SNS Institutions</span>
+                            <span class="mr-4">•</span>
+                            <span>Sports Excellence</span>
+                            <span class="mr-4 ml-4">•</span>
+                            <span>Feb 2025</span>
+                        </div>
+                        <a href="https://www.instagram.com/snsinstitutions/" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-purple-600 hover:text-purple-700 font-bold">
+                            Read Full Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Categories -->
+    <section class="py-8 bg-gray-50 border-y">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <button id="tab-all"
+                    class="tab-button px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">All
+                    Stories</button>
+                <button id="tab-academic"
+                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Academic
+                    Excellence</button>
+                <button id="tab-sports"
+                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Sports
+                    Champions</button>
+                <button id="tab-innovation"
+                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Innovation
+                    Leaders</button>
+                <button id="tab-community"
+                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Community
+                    Impact</button>
+                <button id="tab-arts"
+                    class="tab-button px-6 py-2 bg-white text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition border">Arts
+                    Excellence</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Grid (Edutopia-style) -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="stories-container" class="grid lg:grid-cols-3 gap-8">
+                <div id="stories-container" class="grid lg:grid-cols-3 gap-8">
+                    <!-- Stories will be dynamically loaded here -->
+                </div>
+            </div>
+    </section>
+
+    <script>
+        // Story data organized by categories
+        const stories = {
+            academic: [
+                {
+                    title: "First Runner-Up - Hackathon at DSU, Bengaluru",
+                    description: "Third-year EEE students Aruneshwar S, Mohammed Suhail A, and Abhishek V, along with their team, secured the First Runner-Up position at the hackathon organized by Dayananda Sagar University, Bengaluru. Their innovative solution earned them a cash prize of ₹30,000 and an internship opportunity with the MIT Square Group of Companies.",
+                    image: "/static/useimg/Happy to share that, Third-year EEE students Aruneshwar S, Mohammed Suhail A, and Abhishek V, a (1).webp",
+                    date: "February 2025",
+                    category: "Academic",
+                    color: "blue",
+                    link: "https://www.instagram.com/snsinstitutions/"
+                }
+            ],
+            sports: [
+                {
+                    title: "Championship Victory - Coimbatore Cricket League",
+                    description: "SNS Alumni students have clinched 1st place in the 3rd Division – Coimbatore Cricket League (Season 2024–2025), emerging as Champions for the 4th consecutive time. A moment of immense pride for the institution!",
+                    image: "/static/useimg/A moment of immense pride!SNS Alumni students have clinched 1st place in the 3rd Division – Coi.webp",
+                    date: "February 2025",
+                    category: "Sports",
+                    color: "green",
+                    link: "https://www.instagram.com/snsinstitutions/"
+                },
+                {
+                    title: "State Level Bronze - Mountain Bike Championship",
+                    description: "Proud to share that Mohammed Harish. A (IV – IoT, SNSCE) has won a Bronze Medal in the Under-23 Tamil Nadu State Mountain Bike Championship held at Nagercoil, Kanyakumari District. Congratulations on this fantastic achievement!",
+                    image: "/static/useimg/mtb_championship.webp",
+                    date: "February 2025",
+                    category: "Sports",
+                    color: "green",
+                    link: "https://www.instagram.com/snsinstitutions/"
+                }
+            ],
+            innovation: [
+                {
+                    title: "Odoo × SNS Coimbatore Hackathon",
+                    description: "The Odoo × SNS Coimbatore Hackathon – Final Round was successfully held at the SNS Technical Campus, bringing together talented participants from AP, Bengaluru, and other universities. For two intense days, students were fully immersed in building innovative products and pitching their ideas to industry experts.",
+                    image: "/static/useimg/The Odoo × SNS Coimbatore Hackathon – Final Round was successfully held at the SNS Technical Ca.webp",
+                    date: "February 2025",
+                    category: "Innovation",
+                    color: "orange",
+                    link: "https://www.instagram.com/snsinstitutions/"
+                }
+            ],
+            community: [],
+            arts: [],
+            leadership: []
+        };
+
+        // Function to create story HTML
+        function createStoryHTML(story) {
+            const readMoreLink = story.link || '#';
+            const linkTarget = story.link ? 'target="_blank" rel="noopener noreferrer"' : '';
+            return `
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="${story.image}" alt="${story.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transstakeholder"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-${story.color}-600 text-white px-3 py-1 rounded-full text-xs font-bold">${story.category}</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-${story.color}-600 transition">${story.title}</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            ${story.description}
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>${story.date}</span>
+                        </div>
+                        <a href="${readMoreLink}" ${linkTarget} class="text-${story.color}-600 hover:text-${story.color}-700 font-semibold flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Function to display stories
+        function displayStories(category = 'all') {
+            const container = document.getElementById('stories-container');
+            let storiesToShow = [];
+
+            if (category === 'all') {
+                // Show all stories from all categories
+                Object.values(stories).forEach(categoryStories => {
+                    storiesToShow = storiesToShow.concat(categoryStories);
+                });
+            } else {
+                storiesToShow = stories[category] || [];
+            }
+
+            container.innerHTML = storiesToShow.map(story => createStoryHTML(story)).join('');
+        }
+
+        // Function to handle tab switching
+        function switchTab(activeTab) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('bg-blue-600', 'text-white');
+                button.classList.add('bg-white', 'text-gray-700', 'border');
+            });
+
+            const activeButton = document.getElementById(`tab-${activeTab}`);
+            activeButton.classList.remove('bg-white', 'text-gray-700', 'border');
+            activeButton.classList.add('bg-blue-600', 'text-white');
+
+            // Display stories for the selected category
+            displayStories(activeTab);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Display all stories initially
+            displayStories('all');
+
+            // Add event listeners to tab buttons
+            document.getElementById('tab-all').addEventListener('click', () => switchTab('all'));
+            document.getElementById('tab-academic').addEventListener('click', () => switchTab('academic'));
+            document.getElementById('tab-sports').addEventListener('click', () => switchTab('sports'));
+            document.getElementById('tab-innovation').addEventListener('click', () => switchTab('innovation'));
+            document.getElementById('tab-community').addEventListener('click', () => switchTab('community'));
+            document.getElementById('tab-arts').addEventListener('click', () => switchTab('arts'));
+        });
+    </script>
+
+
+    <!-- Stakeholders Testimonials Section -->
+    <section class="py-16 bg-gradient-to-br from-red-50 to-[#E31E24]/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Stakeholders Say About Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from the students and industry partners who trust SNS College of Technology with their future
+                </p>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <div id="testimonials-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonials-track">
+
+                        <!-- Testimonial 1 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-[#E31E24] rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Priya Sharma</h4>
+                                        <p class="text-gray-600">B.E. CSE - Final Year</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "SNS College of Technology has transformed my approach to learning. The
+                                    industry-expert faculty and design thinking methodology have made me a creative
+                                    problem-solver. I'm not just scoring well academically but also developing
+                                    real-world skills."
+                                </p>
+                                <div class="flex items-center text-[#E31E24] font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-red-500 to-[#E31E24] rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Rajesh Kumar</h4>
+                                        <p class="text-gray-600">B.Tech IT - 3rd Year</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "The innovation labs and research focus at SNS College of Technology are
+                                    exceptional. I have participated in multiple national technical competitions this
+                                    year! The college's emphasis on both academics and innovation through SNS iHub is
+                                    preparing me for future challenges."
+                                </p>
+                                <div class="flex items-center text-[#E31E24] font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#E31E24] to-red-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Anita Menon</h4>
+                                        <p class="text-gray-600">M.B.A - Alumni</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "What sets SNS College of Technology apart is their genuine care for each student's
+                                    overall
+                                    development. The SPINE wellness program, 25+ clubs, and technical facilities are
+                                    outstanding. I love the design thinking approach where unique talents are
+                                    recognized and nurtured. The faculty are experienced and truly dedicated."
+                                </p>
+                                <div class="flex items-center text-[#E31E24] font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                                <div class="flex items-center mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-red-600 to-[#E31E24] rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                        <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                            <path fill="currentColor"
+                                                d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                        </svg>
+
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Dr. Vijay Narayan</h4>
+                                        <p class="text-gray-600">Industry Partner - Tech Solutions</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                    <i class="fas fa-star text-[#E31E24]"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                    "SNS College of Technology's technical excellence program is phenomenal! I secured
+                                    admission to
+                                    top tier companies thanks to the rigorous preparation and design thinking mindset
+                                    developed here.
+                                    The focus on innovation, leadership, and technical excellence truly prepares
+                                    students
+                                    for global success. Worth every investment!"
+                                </p>
+                                <div class="flex items-center text-[#E31E24] font-semibold">
+                                    <i class="fas fa-check-circle mr-2"></i>
+                                    <span>Verified Student Review</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev-testimonial"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-red-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-testimonial"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-red-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-[#E31E24] transition-all"
+                        data-index="0"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-red-400 transition-all"
+                        data-index="1"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-red-400 transition-all"
+                        data-index="2"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-red-400 transition-all"
+                        data-index="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel Script -->
+    <script>
+        (function () {
+            let currentIndex = 0;
+            const track = document.getElementById('testimonials-track');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            const totalSlides = 4;
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-[#E31E24]');
+                    } else {
+                        dot.classList.remove('bg-[#E31E24]');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+
+            document.getElementById('next-testimonial').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+
+            document.getElementById('prev-testimonial').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.dataset.index);
+                    updateCarousel();
+                });
+            });
+
+            // Auto-advance every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+        })();
+    </script>
+
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Write Your Own Success Story</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Join SNS College of Technology and become part of our legacy of excellence, innovation, and achievement!
+            </p>
+            <a href="/admissions"
+                class="inline-flex items-center bg-[#E31E24] hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
+                <i class="fas fa-pen-to-square mr-2"></i>
+                Start Your Journey
+            </a>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>

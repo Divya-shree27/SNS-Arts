@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="static/images/Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SNS College of Technology - Autonomous | NAAC A++ | Coimbatore</title>
+    <meta name="description"
+        content="SNS College of Technology - India's first institute to implement Design Thinking Framework in education. Autonomous, NAAC A++, NBA Accredited.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script src="/static/js/components.js" defer></script>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+    <!-- Hero Section with Real SNS Content -->
+    <section class="relative text-white py-24 lg:py-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/hero3.png" alt="SNS College of Technology Campus"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transstakeholder"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
+                        <i class="fas fa-trophy text-yellow-400 mr-2"></i>
+                        <span class="text-sm font-semibold tracking-wide">India's first institute to implement Design
+                            Thinking Framework in education</span>
+                    </div>
+
+                    <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight font-display">
+                        <a href="/" class="hover:text-red-400 transition duration-300">
+                            Redesigning <br />
+                            <span class="text-[#E31E24]">Common Minds</span>
+                        </a>
+                    </h1>
+
+                    <div class="h-1 w-24 bg-[#E31E24] mb-8 rounded-full"></div>
+
+                    <p class="text-xl lg:text-2xl mb-6 text-gray-200 leading-relaxed max-w-xl">
+                        India's first institute to implement <strong class="text-white">Design
+                            Thinking Framework</strong> in education. Building 1000 AI Startups through revolutionary
+                        SPINE + iHub ecosystem.
+                    </p>
+
+                    <p class="text-sm lg:text-base mb-8 text-gray-200 leading-relaxed max-w-xl">
+                        Autonomous | NAAC A++ | NBA Accreditation. Transform your potential into innovation at
+                        Coimbatore's premier technology institute.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="/admissions"
+                            class="bg-[#E31E24] hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-red-500/30 transition transform hover:-translate-y-1 flex items-center justify-center">
+                            Apply for 2026-27
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="/about"
+                            class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center justify-center">
+                            <i class="fas fa-play mr-2 text-sm"></i>
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 text-xs text-gray-200">
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-circle-check text-green-400 mr-2"></i>
+                            TNEA Code: 2726
+                        </div>
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-shield-halved text-green-400 mr-2"></i>
+                            NAAC A++ Grade
+                        </div>
+                        <div class="inline-flex items-center">
+                            <i class="fas fa-calendar text-green-400 mr-2"></i>
+                            Since 2002
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block relative">
+                    <!-- Optional: Add a floated refined card or keep clean to show the background image -->
+                    <!-- Keeping it clean to showcase the 'Real' image -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-2xl">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    53+ LPA</div>
+                                <div class="text-xs text-gray-200 mt-1">Highest Package</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    1438+</div>
+                                <div class="text-xs text-gray-200 mt-1">Students Placed</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    360+</div>
+                                <div class="text-xs text-gray-200 mt-1">Company Partners</div>
+                            </div>
+                            <div
+                                class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
+                                <div
+                                    class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">
+                                    A++</div>
+                                <div class="text-xs text-gray-200 mt-1">NAAC Grade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="py-10 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center divide-x divide-gray-100">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">2002</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Established</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">1438+</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Placed Students</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">A++</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">NAAC Rating</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">SNS iHub</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">1000 AI Startups</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SNS College of Technology -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-[#E31E24]">Why SNS College of Technology</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    India's first institute to implement Design Thinking Framework in education, redesigning common
+                    minds for a future of innovation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-lightbulb text-3xl text-[#E31E24]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Thinking Framework</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        India's first institute to implement <strong>Design Thinking Framework</strong> in education.
+                        Every student learns to solve problems creatively using <strong>Empathy</strong> and AI-enhanced
+                        methodologies.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-users text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">3P Culture Framework</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <strong>Purpose, Process, People</strong>—our holistic approach ensures every student develops
+                        academically, socially, emotionally, and ethically.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-hand-holding-heart text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">10:1 Personalized Care</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ultra-low student-teacher ratio ensures every student receives individual attention. 60% of our
+                        faculty have 10+ years of experience.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-rocket text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SNS Innovation Hub (iHub)</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Building 1000 AI Startups. 10L+ Seed Funding, Industry Mentor Network, and Global Market Access
+                        for student entrepreneurs.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-building text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SPINE Activity Center</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        5-level world-class activity center with swimming pool, indoor cricket, gym, music studio,
+                        gaming center, and mini theater.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-layer-group text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">5 Pillars Development</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <strong>Learning, Upskilling, Innovation, Networking, Character Building</strong>—comprehensive
+                        development for future leaders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs Overview -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+                    Our <span class="text-[#E31E24]">Academic Programs</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Excellence in education through Design Thinking across Undergraduate and Postgraduate streams.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- UG Programs Card -->
+                <div
+                    class="group bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-[#E31E24]">
+                            <i class="fas fa-user-graduate text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">UG Programs</h3>
+                            <p class="text-[#E31E24] font-semibold text-sm">Undergraduate Degrees</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Explore 17 specialized Engineering and Technology streams designed to spark innovation and
+                        leadership through our unique Design Thinking framework.
+                    </p>
+                    <div class="flex items-center text-sm font-bold text-gray-900 mb-6">
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm mr-3">B.E.</span>
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm mr-3">B.Tech.</span>
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm">4 Years</span>
+                    </div>
+                    <div class="pt-6 border-t border-gray-200">
+                        <span
+                            class="text-[#E31E24] font-bold inline-flex items-center group-hover:translate-x-1 transition-transform">
+                            View All UG Courses <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- PG Programs Card -->
+                <div
+                    class="group bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600">
+                            <i class="fas fa-book-reader text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">PG Programs</h3>
+                            <p class="text-indigo-600 font-semibold text-sm">Postgraduate & Research</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Advance your career with our Master's and Doctoral programs, focusing on business leadership,
+                        technical mastery, and impactful research.
+                    </p>
+                    <div class="flex items-center text-sm font-bold text-gray-900 mb-6">
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm mr-3">MBA</span>
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm mr-3">MCA</span>
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm mr-3">MBA (BA)</span>
+                        <span class="bg-white px-3 py-1 rounded-full shadow-sm">Ph.D.</span>
+                    </div>
+                    <div class="pt-6 border-t border-gray-200">
+                        <span
+                            class="text-[#E31E24] font-bold inline-flex items-center group-hover:translate-x-1 transition-transform">
+                            View All PG Courses <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Research & Innovation Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">Research & <span
+                        class="text-[#E31E24]">Innovation</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A powerhouse of research excellence with significant global impact and industry recognition.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">700+</div>
+                    <div class="text-sm text-gray-600 font-semibold">Patents Filed</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">500+</div>
+                    <div class="text-sm text-gray-600 font-semibold">Patents Granted</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">2700+</div>
+                    <div class="text-sm text-gray-600 font-semibold">Research Papers</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">25+ Cr</div>
+                    <div class="text-sm text-gray-600 font-semibold">Funded Projects</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">16000+</div>
+                    <div class="text-sm text-gray-600 font-semibold">Citations</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">50+</div>
+                    <div class="text-sm text-gray-600 font-semibold">H-Index</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">300+</div>
+                    <div class="text-sm text-gray-600 font-semibold">Industry MoU</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+                    <div class="text-4xl font-extrabold text-[#E31E24] mb-2">86%</div>
+                    <div class="text-sm text-gray-600 font-semibold">Placement Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Certifications Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">Placement <span
+                        class="text-[#E31E24]">Excellence</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Industry-ready students with 5200+ global certifications from leading tech giants.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+                        <i class="fas fa-certificate text-[#E31E24] mr-3"></i> IT Certifications
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex justify-between border-b py-2"><span
+                                class="text-gray-600">Microsoft</span><span class="font-bold">2812</span></div>
+                        <div class="flex justify-between border-b py-2"><span
+                                class="text-gray-600">Databricks</span><span class="font-bold">1374</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">AWS</span><span
+                                class="font-bold">627</span></div>
+                        <div class="flex justify-between border-b py-2"><span
+                                class="text-gray-600">Snowflake</span><span class="font-bold">90</span></div>
+                        <div class="flex justify-between border-b py-2"><span
+                                class="text-gray-600">Salesforce</span><span class="font-bold">75</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">NVIDIA</span><span
+                                class="font-bold">64</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">Oracle</span><span
+                                class="font-bold">59</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">Google</span><span
+                                class="font-bold">14</span></div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+                        <i class="fas fa-gear text-blue-600 mr-3"></i> Core Certifications
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">CATIA</span><span
+                                class="font-bold">75</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">FOSTAC</span><span
+                                class="font-bold">54</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">HACCP</span><span
+                                class="font-bold">43</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">BIM</span><span
+                                class="font-bold">35</span></div>
+                        <div class="flex justify-between border-b py-2"><span class="text-gray-600">Professional Diploma
+                                in CAD</span><span class="font-bold">23</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-900">Scholarship <span
+                    class="text-[#E31E24]">Opportunities</span></h2>
+            <div class="bg-red-50 p-12 rounded-3xl border border-red-100 max-w-4xl mx-auto">
+                <div class="text-5xl font-extrabold text-[#E31E24] mb-4">70+ Lakhs</div>
+                <p class="text-xl text-gray-700 mb-8">Scholarships available for meritorious and deserving students.</p>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <div class="p-4 bg-white rounded-xl shadow-sm font-semibold">Merit-based</div>
+                    <div class="p-4 bg-white rounded-xl shadow-sm font-semibold">Work-while-learn</div>
+                    <div class="p-4 bg-white rounded-xl shadow-sm font-semibold">Financial Aid</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Carousel Container -->
+    <div class="relative">
+        <div id="testimonials-carousel" class="overflow-hidden">
+            <div class="flex transition-transform duration-500 ease-in-out" id="testimonials-track">
+
+                <!-- Testimonial 1 -->
+                <div class="w-full flex-shrink-0 px-4">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                    <path fill="currentColor"
+                                        d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                </svg>
+
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Mrs. Priya Sharma</h4>
+                                <p class="text-gray-600">Parent of Final Year Student</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "SNS College of Technology has transformed my daughter's approach to learning. The
+                            Stanford-trained faculty and design thinking methodology have made her a creative
+                            problem-solver. She's not just scoring well academically but also developing
+                            real-world skills. The personalized attention with 10:1 ratio is truly commendable."
+                        </p>
+                        <div class="flex items-center text-orange-600 font-semibold">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>Verified Parent Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="w-full flex-shrink-0 px-4">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                    <path fill="currentColor"
+                                        d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                </svg>
+
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Mr. Rajesh Kumar</h4>
+                                <p class="text-gray-600">Parent of Grade VII Student</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "The innovation labs and STEM focus at SNS College of Technology are exceptional. My son has
+                            participated in 3 national robotics competitions this year! The college's emphasis on
+                            both academics and innovation through SNS iHub is preparing him for future
+                            challenges. Highly recommend for stakeholders seeking holistic development."
+                        </p>
+                        <div class="flex items-center text-orange-600 font-semibold">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>Verified Parent Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="w-full flex-shrink-0 px-4">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-orange-600 to-amber-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                    <path fill="currentColor"
+                                        d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                </svg>
+
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Mrs. Anita Menon</h4>
+                                <p class="text-gray-600">Parent of Grade V Student</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "What sets SNS College of Technology apart is their genuine care for each student's overall
+                            development. The SPINE wellness program, 25+ clubs, and sports facilities are
+                            outstanding. My daughter loves the fingerprint approach where her unique talents are
+                            recognized and nurtured. The teachers are experienced and truly dedicated."
+                        </p>
+                        <div class="flex items-center text-orange-600 font-semibold">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>Verified Parent Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="w-full flex-shrink-0 px-4">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-red-600 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+
+                                <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
+                                    <path fill="currentColor"
+                                        d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
+                                </svg>
+
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900">Dr. Vijay Narayan</h4>
+                                <p class="text-gray-600">Parent of Final YearII Student</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <i class="fas fa-star text-yellow-500"></i>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "SNS College of Technology's Stanford pathway program is phenomenal! My son secured
+                            admission to
+                            IIT thanks to the rigorous preparation and design thinking mindset developed here.
+                            The focus on innovation, leadership, and academic excellence truly prepares students
+                            for elite universities. Worth every investment!"
+                        </p>
+                        <div class="flex items-center text-orange-600 font-semibold">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>Verified Parent Review</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prev-testimonial"
+            class="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next-testimonial"
+            class="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-600 text-gray-900 hover:text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-all z-10">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="flex justify-center mt-8 space-x-2">
+            <button class="testimonial-dot w-3 h-3 rounded-full bg-orange-600 transition-all" data-index="0"></button>
+            <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all"
+                data-index="1"></button>
+            <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all"
+                data-index="2"></button>
+            <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-orange-400 transition-all"
+                data-index="3"></button>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Testimonials Carousel Script -->
+    <script>
+        (function () {
+            let currentIndex = 0;
+            const track = document.getElementById('testimonials-track');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            const totalSlides = 4;
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-orange-600');
+                    } else {
+                        dot.classList.remove('bg-orange-600');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+
+            document.getElementById('next-testimonial').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+
+            document.getElementById('prev-testimonial').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.dataset.index);
+                    updateCarousel();
+                });
+            });
+
+            // Auto-advance every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+        })();
+    </script>
+
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-red-600 to-[#E31E24] text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4">
+                Ready to Join Coimbatore's Top Technology Institute?
+            </h2>
+            <p class="text-xl opacity-90 mb-8">
+                Admissions open for Academic Year 2026-27. Secure your future with innovation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/admissions"
+                    class="bg-white text-[#E31E24] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
+                    <i class="fas fa-pen-to-square mr-2"></i>
+                    Apply for 2026-27
+                </a>
+                <a href="/contact"
+                    class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    Schedule Campus Visit
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../static/images/Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering & Technology Education | SNS College of Technology - Redesigning Common Minds</title>
+    <meta name="description"
+        content="Pursue excellence in Engineering and Technology at SNS College of Technology. Building 1000 AI Startups through revolutionary SPINE + iHub ecosystem.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script src="/static/js/components.js" defer></script>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/Postgraduate.png" alt="Research & Ph.D. Programs"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Postgraduate & Senior Postgraduate (PhD | Research Programs)</span>
+                </div>
+            </nav>
+
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Engineering & Technology Excellence</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Preparing students for global
+                leadership, disruptive innovation, and entrepreneurial success through our Design Thinking Framework</p>
+
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-[#E31E24] rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Excellence Stage Curriculum</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Final Year and Research focus on academic excellence, board exam preparation, and university readiness.
+                        Students receive comprehensive support for Semester and Final Exams, competitive entrance
+                        exams, and international university applications.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our GenAI-powered design thinking framework continues to guide students through advanced
+                        research, innovation projects, and entrepreneurial ventures while building strong academic
+                        foundations.
+                    </p>
+                </div>
+                <div class="bg-green-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Excellence Stage Objectives</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[#E31E24] mt-1 mr-3"></i>
+                            <span class="text-gray-700">Industry-Ready Technical Excellence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[#E31E24] mt-1 mr-3"></i>
+                            <span class="text-gray-700">Global Professional Readiness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[#E31E24] mt-1 mr-3"></i>
+                            <span class="text-gray-700">Advanced Research & Product Innovation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[#E31E24] mt-1 mr-3"></i>
+                            <span class="text-gray-700">Startup Incubation via iHub</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-[#E31E24] mt-1 mr-3"></i>
+                            <span class="text-gray-700">Design Thinking Mastery</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stream Options (XI-XII) -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Choose Your Stream (Grades 11-12)</h2>
+                <p class="text-xl text-gray-600">Specialized pathways for your future career</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-flask text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Science Stream</h3>
+                    <p class="text-gray-700 mb-4 font-semibold">Physics, Chemistry, Mathematics / Biology with Computer
+                        Science</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Engineering & technology preparation</li>
+                        <li>• Medical & allied health pathways</li>
+                        <li>• Life sciences & research opportunities</li>
+                        <li>• Computer science-enabled STEM careers</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-calculator text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Commerce Stream</h3>
+                    <p class="text-gray-700 mb-4 font-semibold">Accountancy, Business Studies, Economics with
+                        Mathematics</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• CA / CS / CMA professional preparation</li>
+                        <li>• Business & management foundations</li>
+                        <li>• Finance, banking & economics pathways</li>
+                        <li>• Analytics, entrepreneurship & startups</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-book text-4xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Humanities Stream</h3>
+                    <p class="text-gray-700 mb-4 font-semibold">History, Political Science, Economics, Psychology</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• Civil services & government exam preparation</li>
+                        <li>• Law, public policy & governance pathways</li>
+                        <li>• Psychology & mental health foundations</li>
+                        <li>• Social sciences research & critical thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board Results & Success -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Board Results Speak for Themselves</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl font-extrabold text-orange-600 mb-2">100%</div>
+                    <div class="text-2xl font-bold text-gray-900 mb-2">Final Year Pass Rate</div>
+                    <div class="text-gray-600">Consistent 100% pass rate for last 3 years</div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        2023-24: 53 students | 2022-23: 40 students | 2021-22: 30 students
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl font-extrabold text-green-600 mb-2">100%</div>
+                    <div class="text-2xl font-bold text-gray-900 mb-2">Final YearII Pass Rate</div>
+                    <div class="text-gray-600">Excellent track record across all streams</div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        2023-24: 37 students | 2022-23: 49 students | 2021-22: 42 students
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support & Facilities -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Comprehensive Support for Success</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-reader text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Board Exam Coaching</h3>
+                    <p class="text-sm text-gray-600">Intensive preparation for UG & PG board exams</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-university text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">University Counseling</h3>
+                    <p class="text-sm text-gray-600">College application support & essay guidance</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-certificate text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">SAT/TOEFL Coaching</h3>
+                    <p class="text-sm text-gray-600">Standardized test preparation for international universities</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Innovation Projects</h3>
+                    <p class="text-sm text-gray-600">Real-world startup incubation & research opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-red-600 to-[#E31E24] text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Shape Your Future at SNS College of Technology</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join India's first institute to implement Design Thinking in education and prepare for global
+                leadership.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/admissions"
+                    class="bg-white text-[#E31E24] hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition">
+                    Apply for Admission
+                </a>
+                <a href="/contact"
+                    class="bg-white/20 backdrop-blur-lg hover:bg-white/30 px-8 py-4 rounded-xl font-bold text-lg transition">
+                    <i class="fas fa-phone mr-2"></i>Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../static/images/Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Services | SNS College of Technology - Autonomous | Coimbatore</title>
+    <meta name="description"
+        content="Safe and comfortable transport services at SNS College of Technology. Fleet of 20 buses covering major areas of Coimbatore.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script src="/static/js/components.js" defer></script>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/SNS_BUS.jpg" alt="College Transport Services" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Transport</span>
+                </div>
+            </nav>
+
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">College Transport Services</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Safe, comfortable, and
+                punctual transportation for our students</p>
+
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-[#E31E24] rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Reliable College Transport Services</h2>
+                <p class="text-xl text-gray-600">Fleet of 20 buses covering major areas of Coimbatore</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 text-center card-hover">
+                    <div
+                        class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-bus text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">20 Buses</h3>
+                    <p class="text-gray-600">Full fleet of air-conditioned buses</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 text-center card-hover">
+                    <div
+                        class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-map-marked-alt text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">GPS Tracking</h3>
+                    <p class="text-gray-600">Real-time location monitoring</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 text-center card-hover">
+                    <div
+                        class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-shield-alt text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">RFID Cards</h3>
+                    <p class="text-gray-600">Safe boarding system</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 text-center card-hover">
+                    <div
+                        class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-snowflake text-4xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Air Conditioned</h3>
+                    <p class="text-gray-600">All buses fully AC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bus Route Coverage -->
+    <section class="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Bus Route Coverage Areas</h2>
+                <p class="text-xl text-gray-600 mb-2">We cover major areas across Coimbatore</p>
+                <p class="text-lg text-orange-600 font-semibold">🚨 Check if your area is covered before admission!</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        Central Coimbatore
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>RS Puram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Race Course</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Town Hall</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Gandhipuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Saibaba Colony</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-purple-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        East Coimbatore
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Peelamedu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Hopes College</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Singanallur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ramanathapuram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ganapathy</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-green-600 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        West & South
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Vadavalli</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Thudiyalur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Podanur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Ukkadam</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Kuniyamuthur</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Check Your Area CTA -->
+            <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white text-center">
+                <i class="fas fa-exclamation-circle text-5xl mb-4"></i>
+                <h3 class="text-3xl font-bold mb-4">Not Sure If Your Area Is Covered?</h3>
+                <p class="text-xl mb-6">Contact our transport coordinator to check route availability for your specific
+                    location</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+914224390470"
+                        class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        Call: +91 96299 37861
+                    </a>
+                    <a href="/contact"
+                        class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Send Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Safety Features</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6">
+                    <i class="fas fa-tachometer-alt text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Speed Governor</h3>
+                    <p class="text-gray-600">All buses fitted with speed limiters for safety</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6">
+                    <i class="fas fa-satellite-dish text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">GPS Tracking</h3>
+                    <p class="text-gray-600">Real-time location monitoring system</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6">
+                    <i class="fas fa-id-card text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">RFID System</h3>
+                    <p class="text-gray-600">Smart cards for secure boarding</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6">
+                    <i class="fas fa-first-aid text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">First Aid Box</h3>
+                    <p class="text-gray-600">Fully equipped medical kit in every bus</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6">
+                    <i class="fas fa-user-shield text-4xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Trained Staff</h3>
+                    <p class="text-gray-600">Caretakers on every bus for student safety</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6">
+                    <i class="fas fa-video text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">CCTV Cameras</h3>
+                    <p class="text-gray-600">Video surveillance for complete security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transport Rules -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4">Transport Guidelines</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Important information for students</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">General Guidelines</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Punctuality:</strong> Students must report 5 minutes before bus arrival
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-user-check text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Pick-up:</strong> Students must be present at the designated stop on time
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-calendar-alt text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Changes:</strong> Route/stop changes require 1 month advance notice
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Communication:</strong> All requests via official email only
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-purple-600">For Students</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-user-tie text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Uniform:</strong> Proper college uniform mandatory
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-id-badge text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>ID Card:</strong> College ID with bus number required
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-ban text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Prohibited:</strong> Eating, drinking, or games in bus
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Behavior:</strong> Maintain discipline; misbehavior may cancel service
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Information -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-12 text-center">
+                <i class="fas fa-clock text-6xl text-blue-600 mb-6"></i>
+                <h2 class="text-4xl font-bold mb-4">College Timings</h2>
+                <p class="text-xl text-gray-700 mb-6">
+                    Buses are scheduled to ensure students arrive by <strong class="text-blue-600">8:15 AM</strong>
+                    daily
+                </p>
+                <p class="text-gray-600 mb-8">
+                    Routes are designed to minimize transit time and provide comfortable journeys
+                </p>
+                <a href="/contact"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Get Route Schedule
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact for Transport -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Need Transport Information?</h2>
+            <p class="text-xl mb-8">
+                Contact our transport coordinator for route details, availability, and fees
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+914224390470"
+                    class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95664 23456
+                </a>
+                <a href="mailto:snsct@snsgroups.com"
+                    class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    snsct@snsgroups.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../static/images/Favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Undergraduate Programs | SNS College of Technology - Design Thinking Autonomous College Coimbatore</title>
+        <meta name="description" content="SNS College of Technology - India's first Design Thinking Autonomous College in Coimbatore. Undergraduate to Post Graduate Programs with world-class facilities.">
+        
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!-- Font Awesome -->
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+        
+        <style>
+            * { font-family: 'Inter', sans-serif; }
+            h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+            html { scroll-behavior: smooth; }
+            
+            .gradient-bg {
+                background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+            }
+            
+            /* Gradient Text Effect */
+            .gradient-text {
+                background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transstakeholder;
+                background-clip: text;
+            }
+            
+            .gradient-text-blue {
+                background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transstakeholder;
+                background-clip: text;
+            }
+            
+            /* Softer Hero Gradients */
+            .hero-gradient-warm {
+                background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+            }
+            
+            .hero-gradient-cool {
+                background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+            }
+            
+            /* Better Card Shadows */
+            .card-shadow-sm {
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            }
+            
+            .card-shadow {
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            }
+            
+            .card-shadow-lg {
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+            
+            .card-shadow-xl {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            
+            @keyframes gradient {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            
+            .float {
+                animation: float 6s ease-in-out infinite;
+            }
+            
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+            
+            .card-hover {
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .card-hover:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+            
+            .pulse-slow {
+                animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            
+            @keyframes swing {
+                0%, 100% { transform: rotate(-3deg); }
+                50% { transform: rotate(3deg); }
+            }
+            
+            .swing {
+                animation: swing 2s ease-in-out infinite;
+                transform-origin: top center;
+            }
+            
+            /* Badge/Tag Styles */
+            .badge-glow {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+                animation: glow 2s ease-in-out infinite;
+            }
+            
+            @keyframes glow {
+                0%, 100% { box-shadow: 0 0 20px rgba(251, 146, 60, 0.5); }
+                50% { box-shadow: 0 0 30px rgba(251, 146, 60, 0.8); }
+            }
+            
+            /* Smooth Transitions */
+            .transition-smooth {
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            /* Better Line Heights */
+            body {
+                line-height: 1.6;
+            }
+            
+            h1 { line-height: 1.2; letter-spacing: -0.02em; }
+            h2 { line-height: 1.3; letter-spacing: -0.01em; }
+            h3 { line-height: 1.4; }
+
+            /* WhatsApp Floating Button */
+            .whatsapp-float {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #25d366;
+                color: #FFF;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 32px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                animation: pulse-whatsapp 2s infinite;
+            }
+
+            .whatsapp-float:hover {
+                transform: scale(1.1) translateY(-5px);
+                background-color: #128c7e;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                color: white;
+            }
+
+            /* Instagram Floating Button */
+            .instagram-float {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 110px;
+                right: 40px;
+                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                color: #FFF;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 32px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                animation: pulse-instagram 2s infinite;
+            }
+
+            .instagram-float:hover {
+                transform: scale(1.1) translateY(-5px);
+                background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                color: white;
+            }
+
+            @keyframes pulse-whatsapp {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+                }
+                70% {
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+
+            @keyframes pulse-instagram {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+                }
+                70% {
+                    box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .whatsapp-float {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 25px;
+                    right: 25px;
+                    font-size: 28px;
+                }
+                .instagram-float {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 85px;
+                    right: 25px;
+                    font-size: 28px;
+                }
+            }
+        </style>
+        <script src="/static/js/components.js" defer></script>
+</head>
+    <body class="antialiased bg-gray-50">
+        
+        <app-header></app-header>
+
+        <!-- Content -->
+        
+    
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/images/pre-Undergraduate.png" alt="Undergraduate Programs" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Pre-Undergraduate (Ages 2.5 - 5 Years)</span>
+                </div>
+            </nav>
+            
+            
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Undergraduate Programs</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Building strong foundations through project-based learning, curiosity, and foundational development</p>
+            
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-orange-500 rounded-full"></div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+    
+
+    <!-- Program Overview -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                     <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Our Philosophy</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Discovery Through Play</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Every stakeholder appreciates that these early years in education are a time of curiosity, discovery, and learning. Our Precollege curriculum is inquiry and project-based, with a strong focus on developing early Literacy and Numeracy skills.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Great emphasis is placed on developing early reading and writing skills, so that each student is given a "head start" in their education. The wonderful world of stories, Undergraduate rhymes, songs, role-play, and drama within a language-rich learning environment stimulates students's curiosity.
+                    </p>
+                </div>
+                <div class="relative">
+                     <div class="absolute -top-4 -right-4 w-32 h-32 bg-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                     <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <img src="/static/images/SNS College Web/Undergraduate Programs.png" alt="Happy Kindergarten Students" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Groups -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Pre-Undergraduate Programs</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Tailored learning experiences for every stage of foundational.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Undergraduate -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-baby text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Undergraduate (2.5-3.5 years)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                        Our youngest students enjoy a hands-on, fun curriculum with opportunities to think, speak, and listen in various situations.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Communication & language</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Indoor & outdoor learning</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Motor skills development</li>
+                    </ul>
+                </div>
+
+                <!-- LKG -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-student-reaching text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Lower KG (3.5-4.5 years)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                        More structured day with emphasis on early English and Mathematics skills, while maintaining a balanced program.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                         <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Phonics & early reading</li>
+                        <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Basic mathematics concepts</li>
+                        <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Creative arts & design</li>
+                    </ul>
+                </div>
+
+                <!-- UKG -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-student text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Upper KG (4.5-5.5 years)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                        Preparing for formal collegeing with advanced literacy and numeracy skills, critical thinking, and creativity.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                         <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Blending & segmentation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Early writing skills</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>college readiness preparation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Programs -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Literacy Program -->
+                <div class="bg-blue-50 rounded-3xl p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                            <i class="fas fa-book-open text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Literacy Programme</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-8">
+                        We place great emphasis on developing early Literacy skills to provide your student with a 'head start' in their education. Through well-established literacy programmes, students are taught fundamental skills essential for early reading and writing success.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Fun and interactive introduction to alphabetic sounds and phonics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Letter recognition and sound association</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Early reading and writing development</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Numeracy Program -->
+                <div class="bg-green-50 rounded-3xl p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                            <i class="fas fa-calculator text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">Numeracy Programme</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-8">
+                        Our Numeracy programme draws on the young student's natural mathematical interest and encourages numerical proficiency. Students participate in meaningful and fun activities that build their initial understanding.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Number recognition and counting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Shapes, patterns, and spatial awareness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Real-life mathematical experiences</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-purple-900 text-white relative overflow-hidden">
+         <div class="absolute inset-0 bg-[url('https://www.transstakeholdertextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Give Your Student the Best Start</h2>
+            <p class="text-xl mb-10 text-purple-100 font-light">
+                Join SNS College of Technology's Pre-Undergraduate program and watch your student thrive.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/admissions" class="bg-white text-purple-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
+                    Apply for Admission
+                </a>
+                <a href="/contact" class="bg-purple-800 border border-purple-700 hover:bg-purple-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
+                    Schedule Visit
+                </a>
+            </div>
+        </div>
+    </section>
+  
+
+        <app-footer></app-footer>
+    </body>
+    </html>
+  

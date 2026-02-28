@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../static/images/Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Celebrations | SNS College of Technology - Vibrant Campus Life</title>
+    <meta name="description"
+        content="Explore the vibrant life at SNS College of Technology through our conferences, cultural fests, and technical events.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Gradient Text Effect */
+        .gradient-text {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transstakeholder;
+            background-clip: text;
+        }
+
+        /* Softer Hero Gradients */
+        .hero-gradient-warm {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+        }
+
+        .hero-gradient-cool {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+        }
+
+        /* Better Card Shadows */
+        .card-shadow-sm {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes swing {
+
+            0%,
+            100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .swing {
+            animation: swing 2s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        /* Badge/Tag Styles */
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
+            }
+        }
+
+        /* Smooth Transitions */
+        .transition-smooth {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Better Line Heights */
+        body {
+            line-height: 1.6;
+        }
+
+        h1 {
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            line-height: 1.4;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #128c7e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 110px;
+            right: 40px;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulse-instagram 2s infinite;
+        }
+
+        .instagram-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: linear-gradient(45deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #f09433 100%);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        @keyframes pulse-instagram {
+            0% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(225, 48, 108, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(225, 48, 108, 0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 25px;
+                right: 25px;
+                font-size: 28px;
+            }
+
+            .instagram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 85px;
+                right: 25px;
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script src="/static/js/components.js" defer></script>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <app-header></app-header>
+
+    <!-- Content -->
+
+
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/static/useimg/eventbackground.jpeg" alt="Events & Celebrations"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Events</span>
+                </div>
+            </nav>
+
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Events & Celebrations</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Experience the vibrant life
+                at SNS College of Technology through our memorable events, fests, and technical symposiums</p>
+
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-[#E31E24] rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+
+
+    <!-- Instagram-Style Gallery -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Event 1: Pongal Celebration -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/public/static/images/Pongal.webp" alt="Pongal Celebration"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Pongal Celebration</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Pongal Celebration</h3>
+                            <p class="text-white/90 text-sm mb-3">உங்கள் இல்லங்களிலும் மகிழ்ச்சியும், மனங்களில்
+                                நன்றியுணர்வும், வாழ்வில் வளமும் நிறையட்டும். பாரம்பரியமும் பண்பாடும் போற்றப்படும் இந்த
+                                நன்னாளில், புதிய நம்பிக்கைகளும் நல்ல தொடக்கங்களும் மலரட்டும். SNS கல்வி நிறுவனங்கள்
+                                சார்பாக இனிய பொங்கல் திருநாள் நல்வாழ்த்துகள்!</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
+                                <span><i class="fas fa-star mr-1"></i> Festival</span>
+                            </div>
+                            <a href="https://www.instagram.com/p/DTgwcNEk1QH/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">Festival</span>
+                    </div>
+                </div>
+
+                <!-- Event 2: Annual Day -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/static/useimg/annuvalday.jpeg" alt="Annual Day"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Annual Day Celebration</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Annual Day Celebration</h3>
+                            <p class="text-white/90 text-sm mb-3">Celebrating another year of excellence, achievements,
+                                and vibrant campus life. Our Annual Day is a grand showcase of talent, cultural
+                                performances, and academic milestones that bring our community together.</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Feb 2026</span>
+                                <span><i class="fas fa-trophy mr-1"></i> Excellence</span>
+                            </div>
+                            <a href="#"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">Annual Day</span>
+                    </div>
+                </div>
+
+                <!-- Event 3: Valentine Day -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/static/useimg/This Valentine’s Day, SNS Institutions celebrated love in its purest form — “Love from SNS Fami (1).webp"
+                            alt="Valentine Day"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Valentine Day</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Valentine Day</h3>
+                            <p class="text-white/90 text-sm mb-3">This Valentine’s Day, SNS Institutions celebrated love
+                                in its purest form — “Love from SNS Family”. A day of spreading kindness, appreciation,
+                                and joy across our campus, fostering a culture of mutual respect and belonging.</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Feb 2026</span>
+                                <span><i class="fas fa-heart mr-1"></i> Celebration</span>
+                            </div>
+                            <a href="#"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">Valentine
+                            Day</span>
+                    </div>
+                </div>
+
+                <!-- Event 4: Happy New Year -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/public/static/images/Happy New year.webp" alt="Happy New Year"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Happy New Year</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Happy New Year</h3>
+                            <p class="text-white/90 text-sm mb-3">Happy New Year from SNS Institutions! "Empowering
+                                Minds. Shaping Futures. Welcome to New Beginnings." Wishing everyone a year filled with
+                                growth, excellence, and positivity.</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
+                                <span><i class="fas fa-star mr-1"></i> Celebration</span>
+                            </div>
+                            <a href="https://www.instagram.com/p/DS8i4tzEyKO/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span
+                            class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">Celebration</span>
+                    </div>
+                </div>
+
+                <!-- Event 5: Christmas Celebration -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/public/static/images/Christmas.webp" alt="Christmas Celebration"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Christmas Celebration</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Christmas Celebration</h3>
+                            <p class="text-white/90 text-sm mb-3">May this festive season fill your hearts with joy,
+                                peace, and goodwill. Wishing everyone a Christmas filled with love, happiness, and new
+                                beginnings. Warm Christmas wishes from SNS Institutions!!!</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Dec 2025</span>
+                                <span><i class="fas fa-gift mr-1"></i> Festival</span>
+                            </div>
+                            <a href="https://www.instagram.com/p/DSqjISvkzr3/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">Festival</span>
+                    </div>
+                </div>
+
+                <!-- Event 6: Educational Tour -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer aspect-square">
+                    <div class="absolute inset-0">
+                        <img src="/public/static/images/Educational tour.webp" alt="Educational Tour"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transstakeholder"></div>
+                    </div>
+                    <!-- Always visible title -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white font-bold text-2xl">Educational Tour</h3>
+                    </div>
+                    <!-- Hover overlay with full details -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white font-bold text-2xl mb-2">Educational Tour</h3>
+                            <p class="text-white/90 text-sm mb-3">Our Mid Wing students of SNS College of Technology
+                                enjoyed an
+                                enriching educational tour to Thekkady, where learning met nature and adventure. From
+                                exploring the Periyar Wildlife Sanctuary to understanding biodiversity and conservation
+                                firsthand, the experience went beyond textbooks. Filled with teamwork, joy, and
+                                unforgettable memories!</p>
+                            <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
+                                <span><i class="fas fa-calendar mr-1"></i> Dec 2025</span>
+                                <span><i class="fas fa-hiking mr-1"></i> Thekkady</span>
+                            </div>
+                            <a href="https://www.instagram.com/p/DSd5rGBEwpi/?img_index=1" target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
+                                <i class="fas fa-arrow-right mr-2"></i> Read More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">Educational
+                            Tour</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Be Part of Our Vibrant Community</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Join SNS College of Technology and create unforgettable memories through our diverse events and
+                celebrations!
+            </p>
+            <a href="/admissions"
+                class="inline-flex items-center bg-[#E31E24] hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
+                <i class="fas fa-pen-to-square mr-2"></i>
+                Apply for Admission
+            </a>
+        </div>
+    </section>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>
