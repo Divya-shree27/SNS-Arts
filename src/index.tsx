@@ -229,7 +229,7 @@ app.get('/academics/secondary', (c) => {
     <!-- CTA Section -->
     <section class="py-16 bg-gradient-to-r from-green-500 to-emerald-500 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6">Shape Your Future at SNS College of Technology</h2>
+            <h2 class="text-4xl font-bold mb-6">Shape Your Future at Dr. SNS Rajalakshmi College of Arts and Science</h2>
             <p class="text-xl mb-8 opacity-90">
                 Join India's first GenAI-powered Design Thinking Autonomous College and prepare for excellence in board exams and beyond.
             </p>

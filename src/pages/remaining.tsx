@@ -57,7 +57,7 @@ export const InnovationPage = () => {
                 
                 <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heartbeat text-3xl text-red-600"></i>
+                        <i class="fas fa-heartbeat text-3xl text-[#B0CB1F]"></i>
                     </div>
                     <h3 class="font-bold text-lg text-center mb-3">Healthcare</h3>
                     <p class="text-sm text-gray-600 text-center">AI diagnostics, telemedicine, digital health</p>
@@ -217,7 +217,7 @@ export const InnovationPage = () => {
                     
                     <!-- Netflix -->
                     <div class="bg-white rounded-xl p-6 text-center card-hover shadow-lg border border-gray-100">
-                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <div class="w-16 h-16 bg-[#B0CB1F] rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c2.873-.41 5.398-.82 8.489-.82V9.63L9.191 1.05z"/>
                             </svg>
@@ -253,7 +253,7 @@ export const InnovationPage = () => {
                     
                     <!-- Oracle -->
                     <div class="bg-white rounded-xl p-6 text-center card-hover shadow-lg border border-gray-100">
-                        <div class="w-16 h-16 bg-red-700 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <div class="w-16 h-16 bg-[#91A61A] rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.302 0 9.6 4.298 9.6 9.6s-4.298 9.6-9.6 9.6S2.4 17.302 2.4 12 6.698 2.4 12 2.4z"/>
                             </svg>
@@ -264,7 +264,7 @@ export const InnovationPage = () => {
                     
                     <!-- Tesla -->
                     <div class="bg-white rounded-xl p-6 text-center card-hover shadow-lg border border-gray-100">
-                        <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <div class="w-16 h-16 bg-[#B0CB1F] rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 5.362L8.16 15h7.68L12 5.362zM12 0l8.485 21H3.515L12 0z"/>
                             </svg>
@@ -388,7 +388,7 @@ export const InnovationPage = () => {
 export const AboutPage = () => {
     return `
     ${PageHeader(
-        'About SNS College of Technology',
+        'About Dr. SNS Rajalakshmi College of Arts and Science',
         'Redesigning Common Minds & Business Towards Excellence',
         '/static/images/hero.png',
         'About Us'
@@ -418,7 +418,7 @@ export const AboutPage = () => {
                             We believe in nurturing the next generation of innovators through our <strong>GenAI-Powered Design Thinking Framework (Patented)</strong>. Our approach goes beyond textbooks, embedding empathy and creativity into the core of learning.
                         </p>
                         <p class="text-lg text-gray-600 leading-relaxed">
-                            <strong>Sincerity, Nobility, and Service</strong> are not just our core values—they are the guiding principles that shape every student's character at SNS College of Technology.
+                            <strong>Sincerity, Nobility, and Service</strong> are not just our core values—they are the guiding principles that shape every student's character at Dr. SNS Rajalakshmi College of Arts and Science.
                         </p>
                     </div>
 
@@ -643,7 +643,7 @@ export const ContactPage = () => {
                             <i class="fas fa-map-marker-alt text-3xl text-orange-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Address</h3>
-                                <p class="text-gray-700">SNS College of Technology,<br>Thudiyalur - Saravanampatti Road,<br>Vellakinar Post,<br>Coimbatore - 641029.</p>
+                                <p class="text-gray-700">Dr. SNS Rajalakshmi College of Arts and Science,<br>Thudiyalur - Saravanampatti Road,<br>Vellakinar Post,<br>Coimbatore - 641029.</p>
                             </div>
                         </div>
                         <div class="flex items-start">

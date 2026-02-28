@@ -4,8 +4,8 @@ export const EventsPage = () => {
     return `
     ${PageHeader(
         'Events & Celebrations',
-        'Experience the vibrant life at SNS College of Technology through our memorable events, celebrations, and activities',
-        '/static/images/SNS College of Technology Web/Events.webp',
+        'Experience the vibrant life at Dr. SNS Rajalakshmi College of Arts and Science through our memorable events, celebrations, and activities',
+        '/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Events.webp',
         'Events'
     )}
 
@@ -59,7 +59,7 @@ export const EventsPage = () => {
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-white font-bold text-2xl mb-2">Green Day Celebration</h3>
-                            <p class="text-white/90 text-sm mb-3">Our little learners of SNS College of Technology had stepped out of their classrooms and into nature as part of Green Day celebrations. Taken to the lush lawn areas, students were introduced to the importance of greenery, plants, and caring for our environment. A beautiful day filled with curiosity, smiles, and meaningful lessons—planting the seeds of environmental responsibility from an early age.</p>
+                            <p class="text-white/90 text-sm mb-3">Our little learners of Dr. SNS Rajalakshmi College of Arts and Science had stepped out of their classrooms and into nature as part of Green Day celebrations. Taken to the lush lawn areas, students were introduced to the importance of greenery, plants, and caring for our environment. A beautiful day filled with curiosity, smiles, and meaningful lessons—planting the seeds of environmental responsibility from an early age.</p>
                             <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
                                 <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
                                 <span><i class="fas fa-leaf mr-1"></i> Environment</span>
@@ -88,7 +88,7 @@ export const EventsPage = () => {
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-white font-bold text-2xl mb-2">Little Chef</h3>
-                            <p class="text-white/90 text-sm mb-3">Our kindergarten students of SNS College of Technology, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, students explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful!</p>
+                            <p class="text-white/90 text-sm mb-3">Our kindergarten students of Dr. SNS Rajalakshmi College of Arts and Science, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, students explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful!</p>
                             <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
                                 <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
                                 <span><i class="fas fa-utensils mr-1"></i> Kindergarten</span>
@@ -157,7 +157,7 @@ export const EventsPage = () => {
                         </div>
                     </div>
                     <div class="absolute top-4 left-4">
-                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">Festival</span>
+                        <span class="bg-[#B0CB1F] text-white px-3 py-1 rounded-full text-xs font-bold">Festival</span>
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@ export const EventsPage = () => {
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transstakeholder opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-white font-bold text-2xl mb-2">Educational Tour</h3>
-                            <p class="text-white/90 text-sm mb-3">Our Mid Wing students of SNS College of Technology enjoyed an enriching educational tour to Thekkady, where learning met nature and adventure. From exploring the Periyar Wildlife Sanctuary to understanding biodiversity and conservation firsthand, the experience went beyond textbooks. Filled with teamwork, joy, and unforgettable memories!</p>
+                            <p class="text-white/90 text-sm mb-3">Our Mid Wing students of Dr. SNS Rajalakshmi College of Arts and Science enjoyed an enriching educational tour to Thekkady, where learning met nature and adventure. From exploring the Periyar Wildlife Sanctuary to understanding biodiversity and conservation firsthand, the experience went beyond textbooks. Filled with teamwork, joy, and unforgettable memories!</p>
                             <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
                                 <span><i class="fas fa-calendar mr-1"></i> Dec 2025</span>
                                 <span><i class="fas fa-hiking mr-1"></i> Thekkady</span>
@@ -199,7 +199,7 @@ export const EventsPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Be Part of Our Vibrant Community</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Join SNS College of Technology and create unforgettable memories through our diverse events and celebrations!
+                Join Dr. SNS Rajalakshmi College of Arts and Science and create unforgettable memories through our diverse events and celebrations!
             </p>
             <a href="/admissions" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>

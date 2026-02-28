@@ -8,8 +8,8 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${title} | SNS College of Technology - Design Thinking Autonomous College Coimbatore</title>
-        <meta name="description" content="SNS College of Technology - India's first Design Thinking Autonomous College in Coimbatore. Undergraduate to Post Graduate Programs with world-class facilities.">
+        <title>${title} | Dr. SNS Rajalakshmi College of Arts and Science - Design Thinking Autonomous College Coimbatore</title>
+        <meta name="description" content="Dr. SNS Rajalakshmi College of Arts and Science - India's first Design Thinking Autonomous College in Coimbatore. Undergraduate to Post Graduate Programs with world-class facilities.">
         
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -248,7 +248,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
         
         <!-- Hanging Tag 2: Brochure -->
         <div class="fixed top-[36%] right-0 z-50 swing" style="animation-delay: 0.3s;">
-            <a href="https://snsacademy.org/brochure/" target="_blank" class="bg-gradient-to-br from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
+            <a href="https://snsacademy.org/brochure/" target="_blank" class="bg-gradient-to-br from-[#B0CB1F] to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
                 <i class="fas fa-file-pdf text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                 <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">BROCHURE</span>
             </a>
@@ -267,9 +267,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <a href="/" class="flex items-center space-x-3">
-                        <img src="/static/images/Logo.png" alt="SNS College of Technology Logo" class="h-16 w-auto">
+                        <img src="/static/images/Logo.png" alt="Dr. SNS Rajalakshmi College of Arts and Science Logo" class="h-16 w-auto">
                         <div>
-                            <h1 class="text-xl font-bold text-gray-900">SNS College of Technology</h1>
+                            <h1 class="text-xl font-bold text-gray-900">Dr. SNS Rajalakshmi College of Arts and Science</h1>
                             <p class="text-xs text-gray-500">Design Thinking College</p>
                         </div>
                     </a>
@@ -417,9 +417,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <img src="/static/images/Logo.png" alt="SNS College of Technology Logo" class="h-12 w-auto bg-white rounded p-1">
+                            <img src="/static/images/Logo.png" alt="Dr. SNS Rajalakshmi College of Arts and Science Logo" class="h-12 w-auto bg-white rounded p-1">
                             <div>
-                                <h3 class="text-white font-bold">SNS College of Technology</h3>
+                                <h3 class="text-white font-bold">Dr. SNS Rajalakshmi College of Arts and Science</h3>
                                 <p class="text-xs">Design Thinking College</p>
                             </div>
                         </div>
@@ -463,7 +463,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <div>
                         <h4 class="text-white font-bold mb-4">Connect</h4>
                         <ul class="space-y-2 text-sm mb-4">
-                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS College of Technology,<br />Thudiyalur - Saravanampatti Road,<br />Vellakinar Post,<br />Coimbatore - 641029.</li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i>Dr. SNS Rajalakshmi College of Arts and Science,<br />Thudiyalur - Saravanampatti Road,<br />Vellakinar Post,<br />Coimbatore - 641029.</li>
                             <li><a href="tel:+919629937861" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 96299 37861</a></li>
                             <li><a href="tel:+917530093730" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Landline: +91 75300 93730</a></li>
                             <li><a href="mailto:info@snsacademy.org" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>info@snsacademy.org</a></li>
@@ -487,7 +487,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 </div>
                 
                 <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                    <p>&copy; 2026 SNS College of Technology. All rights reserved.</p>
+                    <p>&copy; 2026 Dr. SNS Rajalakshmi College of Arts and Science. All rights reserved.</p>
                     <p class="mt-2 text-orange-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
                     <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
                     <p class="mt-3 text-orange-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>

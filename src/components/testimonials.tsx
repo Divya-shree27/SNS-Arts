@@ -12,7 +12,7 @@ export const StakeholdersTestimonialsCarousel = () => {
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">What Stakeholders Say About Us</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Hear from the stakeholders who trust SNS College of Technology with their students's future
+                    Hear from the stakeholders who trust Dr. SNS Rajalakshmi College of Arts and Science with their students's future
                 </p>
             </div>
 
@@ -25,7 +25,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-[#B0CB1F] rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -41,7 +41,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "SNS College of Technology has transformed my daughter's approach to learning. The Stanford-trained faculty and design thinking methodology have made her a creative problem-solver. She's not just scoring well academically but also developing real-world skills. The personalized attention with 10:1 ratio is truly commendable."
+                                    "Dr. SNS Rajalakshmi College of Arts and Science has transformed my daughter's approach to learning. The Stanford-trained faculty and design thinking methodology have made her a creative problem-solver. She's not just scoring well academically but also developing real-world skills. The personalized attention with 10:1 ratio is truly commendable."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
@@ -54,7 +54,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-[#B0CB1F] to-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -70,7 +70,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "The innovation labs and STEM focus at SNS College of Technology are exceptional. My son has participated in 3 national robotics competitions this year! The College's emphasis on both academics and innovation through SNS iHub is preparing him for future challenges. Highly recommend for stakeholders seeking holistic development."
+                                    "The innovation labs and STEM focus at Dr. SNS Rajalakshmi College of Arts and Science are exceptional. My son has participated in 3 national robotics competitions this year! The College's emphasis on both academics and innovation through SNS iHub is preparing him for future challenges. Highly recommend for stakeholders seeking holistic development."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
@@ -99,7 +99,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "What sets SNS College of Technology apart is their genuine care for each student's overall development. The SPINE wellness program, 25+ clubs, and sports facilities are outstanding. My daughter loves the fingerprint approach where her unique talents are recognized and nurtured. The teachers are experienced and truly dedicated."
+                                    "What sets Dr. SNS Rajalakshmi College of Arts and Science apart is their genuine care for each student's overall development. The SPINE wellness program, 25+ clubs, and sports facilities are outstanding. My daughter loves the fingerprint approach where her unique talents are recognized and nurtured. The teachers are experienced and truly dedicated."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
@@ -112,7 +112,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                         <div class="w-full flex-shrink-0 px-4">
                             <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                                    <div class="w-16 h-16 bg-gradient-to-br from-[#B0CB1F] to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
                                         ${avatarIcon}
                                     </div>
                                     <div>
@@ -128,7 +128,7 @@ export const StakeholdersTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "SNS College of Technology's Stanford pathway program is phenomenal! My son secured admission to IIT thanks to the rigorous preparation and design thinking mindset developed here. The focus on innovation, leadership, and academic excellence truly prepares students for elite universities. Worth every investment!"
+                                    "Dr. SNS Rajalakshmi College of Arts and Science's Stanford pathway program is phenomenal! My son secured admission to IIT thanks to the rigorous preparation and design thinking mindset developed here. The focus on innovation, leadership, and academic excellence truly prepares students for elite universities. Worth every investment!"
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>

@@ -6,7 +6,7 @@ export const SuccessStoriesPage = () => {
     ${PageHeader(
         'Success Stories',
         'Celebrating the achievements, breakthroughs, and inspiring journeys of our students who are making their mark in the world',
-        '/static/images/SNS College of Technology Web/Success.webp',
+        '/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Success.webp',
         'Success Stories'
     )}
 
@@ -33,10 +33,10 @@ export const SuccessStoriesPage = () => {
                         </div>
                         <h2 class="text-4xl font-bold text-gray-900 mb-4">Book of Record Achievement</h2>
                         <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                            The Dinamalar Pattam – Final Round was successfully held at SNS College of Technology. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.
+                            The Dinamalar Pattam – Final Round was successfully held at Dr. SNS Rajalakshmi College of Arts and Science. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.
                         </p>
                         <div class="flex items-center text-sm text-gray-600 mb-6">
-                            <span class="font-semibold mr-4">SNS College of Technology</span>
+                            <span class="font-semibold mr-4">Dr. SNS Rajalakshmi College of Arts and Science</span>
                             <span class="mr-4">•</span>
                             <span>Award Ceremony</span>
                             <span class="mr-4 ml-4">•</span>
@@ -81,7 +81,7 @@ export const SuccessStoriesPage = () => {
             academic: [
                 {
                     title: "Award Ceremony - Dinamalar Pattam",
-                    description: "The Dinamalar Pattam – Final Round was successfully held at SNS College of Technology. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.",
+                    description: "The Dinamalar Pattam – Final Round was successfully held at Dr. SNS Rajalakshmi College of Arts and Science. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.",
                     image: "https://scontent-maa3-2.cdninstagram.com/v/t51.82787-15/626891271_18344067850235871_1200955119167657763_n.webp?_nc_cat=110&ig_cache_key=MzgyNDA2ODExMTg0NzYwNDczNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwNzl4NzE5LnNkci5DMyJ9&_nc_ohc=imXjG4cdVmsQ7kNvwGqq_yg&_nc_oc=AdnK4WzY-XG-lSMFN_S34f7N4fb3U3JLWATVPcI8wsZ5y8r_uqjbRsT4WKT62ncWDdk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-2.cdninstagram.com&_nc_gid=Ub07e9jp45HNLRXJHY7Zmw&oh=00_AfuoX1uSIlRO_7mn6t9MhTY8K2_KnHizCmIHqR9wTTso8A&oe=6987641B",
                     date: "January 2026",
                     category: "Academic",
@@ -90,7 +90,7 @@ export const SuccessStoriesPage = () => {
                 },
                 {
                     title: "Book of Record - Dinamalar Pattam Final",
-                    description: "The Dinamalar Pattam – Final Round was successfully held at SNS College of Technology. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.",
+                    description: "The Dinamalar Pattam – Final Round was successfully held at Dr. SNS Rajalakshmi College of Arts and Science. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.",
                     image: "https://scontent-maa3-2.cdninstagram.com/v/t51.82787-15/618548952_17913080631271418_4275555023929199059_n.webp?_nc_cat=110&ig_cache_key=MzgxNDEzNTM1MDc3MjYyMjE5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=qL3MgYlQMwsQ7kNvwFRBblW&_nc_oc=Adnyply_5YwqDHFFfjCmwR3y9kdAaViAA18ZLBpmiNAJ8OKMSlQHOWWq8obsflCUyno&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-2.cdninstagram.com&_nc_gid=Ub07e9jp45HNLRXJHY7Zmw&oh=00_AfucDmHsYEG1wNs0iP4NQkOwDav0Oap6l_ndXzK01eckrA&oe=698790DD",
                     date: "January 2026",
                     category: "Academic",
@@ -99,7 +99,7 @@ export const SuccessStoriesPage = () => {
                 },
                 {
                     title: "Chess Championship - District Level Winner",
-                    description: "Hats off to S. Lakshan of Grade III, of SNS College of Technology for dominating the board and emerging as the Champion at the District Level Students's Chess Tournament! His strategic mind and focus are truly remarkable. We are thrilled to celebrate his brilliant victory! Way to go, Lakshan!",
+                    description: "Hats off to S. Lakshan of Grade III, of Dr. SNS Rajalakshmi College of Arts and Science for dominating the board and emerging as the Champion at the District Level Students's Chess Tournament! His strategic mind and focus are truly remarkable. We are thrilled to celebrate his brilliant victory! Way to go, Lakshan!",
                     image: "https://scontent-maa3-4.cdninstagram.com/v/t51.82787-15/604081912_17909866551271418_8637630666294558801_n.webp?_nc_cat=102&ig_cache_key=Mzc5MzU1NTQyNjMwMzQ4MDc5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=juJrhcGP48kQ7kNvwFv4eM2&_nc_oc=Adm2H91h59iGs5TJJAs5_OghcuzC8nC70bzV9PD3SbpNSsDo0Xu-Ud6wld_LxUB-UPw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-4.cdninstagram.com&_nc_gid=92vzA0E3IgpdlBU0520mWg&oh=00_AftWtCfBAdbctc3bHfZ9sHfOiqR_xAPyZZZBmifqM4x4Dg&oe=69878C70",
                     date: "December 2025",
                     category: "Academic",
@@ -110,7 +110,7 @@ export const SuccessStoriesPage = () => {
             sports: [
                 {
                     title: "Silambam Championship - State Level Silver",
-                    description: "We are proud to applaud D. Akshara of Grade IV for her remarkable achievement at the State Level Silambam Championship 2025, securing 2nd place! Her dedication, disciplined training, and skill in this ancient martial art truly inspire us. Congratulations, Akshara — keep shining and making SNS College of Technology proud.",
+                    description: "We are proud to applaud D. Akshara of Grade IV for her remarkable achievement at the State Level Silambam Championship 2025, securing 2nd place! Her dedication, disciplined training, and skill in this ancient martial art truly inspire us. Congratulations, Akshara — keep shining and making Dr. SNS Rajalakshmi College of Arts and Science proud.",
                     image: "https://scontent-maa3-4.cdninstagram.com/v/t51.82787-15/602266882_18338402344235871_1239359804105916608_n.webp?_nc_cat=102&ig_cache_key=Mzc5MjE5MTY3OTA4NTQwMDI5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=FYu6kqQ4dEIQ7kNvwFCkC6p&_nc_oc=AdmFZumBH2qv0pFb5gcotrpZBQiGrkCD7n9vT8lvFBS6G-x_1e6bymbELm-12zG9G8g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-4.cdninstagram.com&_nc_gid=92vzA0E3IgpdlBU0520mWg&oh=00_Afticl9DSlYbAKkNqhH7L25gE_6Ejw_i7xFebb54EQr6Vg&oe=6987892D",
                     date: "December 2025",
                     category: "Sports",
@@ -122,7 +122,7 @@ export const SuccessStoriesPage = () => {
             community: [
                 {
                     title: "Little Chef - Healthy Eating Initiative",
-                    description: "Our kindergarten students of SNS College of Technology, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, students explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful. A truly heartwarming experience where fun met healthy habits!",
+                    description: "Our kindergarten students of Dr. SNS Rajalakshmi College of Arts and Science, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, students explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful. A truly heartwarming experience where fun met healthy habits!",
                     image: "https://scontent-maa3-4.cdninstagram.com/v/t51.82787-15/612048914_18340162762235871_4589295776461399701_n.webp?_nc_cat=102&ig_cache_key=MzgwMzczNDU2NjQyMzk5Nzg0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4NzIwLnNkci5DMyJ9&_nc_ohc=SwoO0anUKZgQ7kNvwEHAjv7&_nc_oc=AdlC_Uqv_FiZKiEzwi762K48ex6vOXRjieKviXApXfKnCdjMK5tGDm5QzNUoPKqs050&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-4.cdninstagram.com&_nc_gid=mVC0gIw4aY5kbTMyjoe5MA&oh=00_AfsFFHCh3RLa_9-7AKNCISkZjzdzzalBvPIMPLUFawZlZw&oe=69877F45",
                     date: "January 2026",
                     category: "Community",
@@ -229,7 +229,7 @@ export const SuccessStoriesPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Write Your Own Success Story</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Join SNS College of Technology and become part of our legacy of excellence, innovation, and achievement!
+                Join Dr. SNS Rajalakshmi College of Arts and Science and become part of our legacy of excellence, innovation, and achievement!
             </p>
             <a href="/admissions" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>

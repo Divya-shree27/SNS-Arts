@@ -10,10 +10,10 @@ export const GalleryPage = () => {
         'Gallery'
     )}
 
-    <!-- Life at SNS College of Technology -->
+    <!-- Life at Dr. SNS Rajalakshmi College of Arts and Science -->
     <section class="py-16 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">Life @ SNS College of Technology</h2>
+            <h2 class="text-4xl font-bold text-center mb-4">Life @ Dr. SNS Rajalakshmi College of Arts and Science</h2>
             <p class="text-center text-xl text-gray-600 mb-12">Where learning meets joy, and every day is an adventure!</p>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -33,7 +33,7 @@ export const GalleryPage = () => {
                 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
                     <div class="h-64 relative overflow-hidden">
-                        <img src="/static/images/SNS College of Technology Web/Colla Work.png" alt="Collaborative Work" class="w-full h-full object-cover">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Colla Work.png" alt="Collaborative Work" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transstakeholder"></div>
                         <div class="absolute bottom-4 left-4 text-white">
                             <i class="fas fa-users text-3xl mb-2"></i>
@@ -47,7 +47,7 @@ export const GalleryPage = () => {
                 
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
                     <div class="h-64 relative overflow-hidden">
-                        <img src="/static/images/SNS College of Technology Web/Happy Envirn.png" alt="Happy Environment" class="w-full h-full object-cover">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Happy Envirn.png" alt="Happy Environment" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transstakeholder"></div>
                         <div class="absolute bottom-4 left-4 text-white">
                             <i class="fas fa-smile-beam text-3xl mb-2"></i>
@@ -123,7 +123,7 @@ export const GalleryPage = () => {
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-xl">
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-flask text-3xl text-red-600"></i>
+                        <i class="fas fa-flask text-3xl text-[#B0CB1F]"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Chemistry Lab</h3>
                     <p class="text-gray-600">Fully-equipped with modern apparatus for hands-on experiments</p>
@@ -197,7 +197,7 @@ export const GalleryPage = () => {
                 </div>
                 
                 <div class="bg-gradient-to-br from-red-50 to-rose-50 rounded-xl p-6">
-                    <i class="fas fa-video text-4xl text-red-600 mb-4"></i>
+                    <i class="fas fa-video text-4xl text-[#B0CB1F] mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">CCTV Security</h3>
                     <p class="text-gray-600 text-sm">24/7 monitoring for student safety</p>
                 </div>
@@ -326,7 +326,7 @@ export const SportsClubsPage = () => {
                 
                 <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 shadow-lg card-hover">
                     <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-baseball-ball text-4xl text-red-600"></i>
+                        <i class="fas fa-baseball-ball text-4xl text-[#B0CB1F]"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-center mb-4">Cricket</h3>
                     <p class="text-gray-600 text-center">All-weather indoor cricket center with nets</p>
@@ -432,7 +432,7 @@ export const SportsClubsPage = () => {
                 </div>
                 
                 <div class="bg-white rounded-xl p-6 shadow-lg text-center card-hover">
-                    <i class="fas fa-drama text-5xl text-red-600 mb-4"></i>
+                    <i class="fas fa-drama text-5xl text-[#B0CB1F] mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Drama Club</h3>
                     <p class="text-sm text-gray-600">Theater and public speaking</p>
                 </div>
@@ -486,7 +486,7 @@ export const SportsClubsPage = () => {
                 </div>
                 
                 <div class="bg-white rounded-xl p-6 shadow-lg text-center card-hover">
-                    <i class="fas fa-microphone-alt text-5xl text-red-600 mb-4"></i>
+                    <i class="fas fa-microphone-alt text-5xl text-[#B0CB1F] mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Toastmasters Club</h3>
                     <p class="text-sm text-gray-600">Public speaking & leadership skills</p>
                 </div>
@@ -507,7 +507,7 @@ export const SportsClubsPage = () => {
             <p class="text-xl mb-8">Join our sports teams and clubs to unlock your potential!</p>
             <a href="/admissions" class="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-block">
                 <i class="fas fa-trophy mr-2"></i>
-                Join SNS College of Technology
+                Join Dr. SNS Rajalakshmi College of Arts and Science
             </a>
         </div>
     </section>
@@ -519,7 +519,7 @@ export const BrochurePage = () => {
     return `
     ${PageHeader(
         'Digital Brochure',
-        'Download our complete prospectus and learn more about SNS College of Technology',
+        'Download our complete prospectus and learn more about Dr. SNS Rajalakshmi College of Arts and Science',
         '/static/images/hero.png',
         'Brochure'
     )}
@@ -527,14 +527,14 @@ export const BrochurePage = () => {
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 text-center shadow-xl">
-                <i class="fas fa-file-pdf text-8xl text-red-600 mb-8"></i>
-                <h2 class="text-4xl font-bold mb-4">SNS College of Technology Prospectus</h2>
+                <i class="fas fa-file-pdf text-8xl text-[#B0CB1F] mb-8"></i>
+                <h2 class="text-4xl font-bold mb-4">Dr. SNS Rajalakshmi College of Arts and Science Prospectus</h2>
                 <p class="text-xl text-gray-700 mb-8">
                     Comprehensive guide with complete information about our programs, facilities, admission process, and fees structure.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="https://snsacademy.org/brochure/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <a href="https://snsacademy.org/brochure/" target="_blank" class="bg-[#B0CB1F] hover:bg-[#91A61A] text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-download mr-2"></i>
                         Download Brochure
                     </a>

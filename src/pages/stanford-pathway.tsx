@@ -16,7 +16,7 @@ export const StanfordPathwayPage = () => {
                 <div class="relative">
                     <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                      <div class="rounded-2xl overflow-hidden shadow-2xl relative">
-                        <img src="/static/images/SNS College of Technology Web/Stanford-Trained Faculty.png" alt="Stanford Trained Faculty" class="w-full h-full object-cover">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Stanford-Trained Faculty.png" alt="Stanford Trained Faculty" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transstakeholder p-8">
                             <p class="text-white font-bold text-lg">World-Class Mentorship</p>
                             <p class="text-gray-300 text-sm">Direct guidance from industry experts</p>
@@ -149,7 +149,7 @@ export const StanfordPathwayPage = () => {
                     <div class="absolute top-0 right-0 w-64 h-64 bg-red-50 rounded-bl-full -mr-16 -mt-16 opacity-50"></div>
                      <div class="grid md:grid-cols-12 gap-8 relative z-10">
                         <div class="md:col-span-4">
-                            <div class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 3</div>
+                            <div class="inline-block bg-red-100 text-[#91A61A] px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 3</div>
                             <h3 class="text-3xl font-bold text-gray-900 mb-2">Excellence Stage</h3>
                             <p class="text-lg text-gray-500 font-medium mb-6">Grades 9 - 12</p>
                             <p class="text-gray-600 leading-relaxed">
@@ -158,7 +158,7 @@ export const StanfordPathwayPage = () => {
                         </div>
                         <div class="md:col-span-8 grid sm:grid-cols-2 gap-8 border-t md:border-t-0 md:border-l border-gray-100 pt-8 md:pt-0 md:pl-8">
                             <div>
-                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-bullseye text-red-600 mr-2"></i> Objectives</h4>
+                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-bullseye text-[#B0CB1F] mr-2"></i> Objectives</h4>
                                 <ul class="space-y-3 text-gray-600 text-sm">
                                     <li class="flex items-start"><span class="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Advanced Research & Innovation</li>
                                     <li class="flex items-start"><span class="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Entrepreneurial Mindset</li>
@@ -166,7 +166,7 @@ export const StanfordPathwayPage = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-cogs text-red-600 mr-2"></i> Methods</h4>
+                                <h4 class="font-bold text-gray-900 mb-4 flex items-center"><i class="fas fa-cogs text-[#B0CB1F] mr-2"></i> Methods</h4>
                                 <ul class="space-y-3 text-gray-600 text-sm">
                                     <li class="flex items-start"><span class="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Real-World Startup Projects</li>
                                     <li class="flex items-start"><span class="w-1.5 h-1.5 bg-red-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>Patents & Publications</li>
@@ -193,10 +193,10 @@ export const StanfordPathwayPage = () => {
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:shadow-xl transition duration-300 group text-center">
                     <div class="w-16 h-16 mx-auto bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
-                        <i class="fas fa-graduation-cap text-3xl text-red-600"></i>
+                        <i class="fas fa-graduation-cap text-3xl text-[#B0CB1F]"></i>
                     </div>
                     <div class="text-4xl font-bold text-gray-900 mb-2">95%+</div>
-                    <p class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2">Academic Excellence</p>
+                    <p class="text-sm font-bold text-[#B0CB1F] uppercase tracking-wider mb-2">Academic Excellence</p>
                     <p class="text-gray-500 text-sm">Target Score for Board Exams</p>
                 </div>
 
@@ -276,7 +276,7 @@ export const StanfordPathwayPage = () => {
                         <div class="col-span-1 bg-purple-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-users text-2xl text-purple-400"></i></div>
                         <div class="col-span-1 bg-pink-500/20 rounded-lg p-4 h-24 flex items-center justify-center"><i class="fas fa-heart text-2xl text-pink-400"></i></div>
                         <div class="col-span-1 bg-yellow-500/20 rounded-lg p-4 h-20 flex items-center justify-center"><i class="fas fa-tag text-2xl text-yellow-400"></i></div>
-                        <div class="col-span-2 bg-red-500/20 rounded-lg p-4 h-20 flex items-center justify-center"><i class="fas fa-chart-line text-2xl text-red-400"></i></div>
+                        <div class="col-span-2 bg-[#B0CB1F]/20 rounded-lg p-4 h-20 flex items-center justify-center"><i class="fas fa-chart-line text-2xl text-red-400"></i></div>
                     </div>
                      <p class="text-center text-gray-500 text-sm mt-4">Interactive Business Model Canvas Framework</p>
                 </div>

@@ -6,7 +6,7 @@ export const HomePage = () => {
     <section class="relative text-white py-24 lg:py-32 overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="/static/images/hero.png" alt="SNS College of Technology Campus" class="w-full h-full object-cover">
+            <img src="/static/images/hero.png" alt="Dr. SNS Rajalakshmi College of Arts and Science Campus" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-black/10 to-transstakeholder"></div>
         </div>
         
@@ -114,11 +114,11 @@ export const HomePage = () => {
         </div>
     </section>
 
-    <!-- Why SNS College of Technology -->
+    <!-- Why Dr. SNS Rajalakshmi College of Arts and Science -->
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Stakeholders Choose SNS College of Technology</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Stakeholders Choose Dr. SNS Rajalakshmi College of Arts and Science</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     We don't just teach subjects—we redesign common minds through design thinking, preparing your student for tomorrow's challenges.
                 </p>
@@ -285,7 +285,7 @@ export const HomePage = () => {
     ${StakeholdersTestimonialsCarousel()}
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+    <section class="py-20 bg-gradient-to-r from-orange-600 to-[#B0CB1F] text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl lg:text-5xl font-bold mb-4">
                 Ready to Transform Your Student's Future?

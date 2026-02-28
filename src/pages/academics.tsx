@@ -139,7 +139,7 @@ export const PrePrimaryPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl font-bold mb-6">Give Your Student the Best Start</h2>
             <p class="text-xl mb-10 text-purple-100 font-light">
-                Join SNS College of Technology's Pre-Primary program and watch your student thrive.
+                Join Dr. SNS Rajalakshmi College of Arts and Science's Pre-Primary program and watch your student thrive.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/admissions" class="bg-white text-purple-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
@@ -171,7 +171,7 @@ export const PrimaryPage = () => {
                     <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Curriculum</span>
                     <h2 class="text-4xl font-bold text-gray-900 mb-6">NAAC A++ with Innovation</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        SNS College of Technology follows Autonomous curriculum enhanced with design thinking methodologies. Core English and Mathematics skills are explicitly taught from foundation, while the broader skills of Literacy and Numeracy are developed across all subject areas.
+                        Dr. SNS Rajalakshmi College of Arts and Science follows Autonomous curriculum enhanced with design thinking methodologies. Core English and Mathematics skills are explicitly taught from foundation, while the broader skills of Literacy and Numeracy are developed across all subject areas.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
                         All classrooms are equipped with smart boards which are used regularly to facilitate learning, making education interactive and engaging.
@@ -180,7 +180,7 @@ export const PrimaryPage = () => {
                 <div class="relative">
                     <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
                      <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-                    <img src="/static/images/SNS College of Technology Web/Postgraduate Programs.png" alt="Primary Classroom" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                    <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Postgraduate Programs.png" alt="Primary Classroom" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
                 </div>
             </div>
         </div>

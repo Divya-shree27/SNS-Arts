@@ -153,7 +153,7 @@ export const TransportPage = () => {
             </div>
 
             <!-- Check Your Area CTA -->
-            <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white text-center">
+            <div class="bg-gradient-to-r from-orange-500 to-[#B0CB1F] rounded-2xl p-8 text-white text-center">
                 <i class="fas fa-exclamation-circle text-5xl mb-4"></i>
                 <h3 class="text-3xl font-bold mb-4">Not Sure If Your Area Is Covered?</h3>
                 <p class="text-xl mb-6">Contact our transport coordinator to check route availability for your specific location</p>
@@ -178,7 +178,7 @@ export const TransportPage = () => {
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6">
-                    <i class="fas fa-tachometer-alt text-4xl text-red-600 mb-4"></i>
+                    <i class="fas fa-tachometer-alt text-4xl text-[#B0CB1F] mb-4"></i>
                     <h3 class="text-xl font-bold mb-3">Speed Governor</h3>
                     <p class="text-gray-600">All buses fitted with speed limiters for safety</p>
                 </div>

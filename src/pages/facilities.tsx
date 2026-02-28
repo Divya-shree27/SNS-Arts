@@ -25,7 +25,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Swim.png" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Swim.png" alt="Swimming Pool" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Swimming Pool</h3>
@@ -39,7 +39,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Indoor.png" alt="Indoor Cricket Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Indoor.png" alt="Indoor Cricket Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Indoor Cricket</h3>
@@ -53,7 +53,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Fitness.png" alt="Fitness Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Fitness.png" alt="Fitness Center" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Fitness Center</h3>
@@ -67,7 +67,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Music.png" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Music.png" alt="Music Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Music Studio</h3>
@@ -81,7 +81,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Dance.png" alt="Beats Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Dance.png" alt="Beats Dance Studio" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Dance Studio</h3>
@@ -95,7 +95,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Art Studio.png" alt="Art Room" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Art Studio.png" alt="Art Room" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Art Studio</h3>
@@ -109,7 +109,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/The.png" alt="Bioskop Theater" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/The.png" alt="Bioskop Theater" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Bioskop Theater</h3>
@@ -123,7 +123,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/Gaming Area.png" alt="Gaming Arena" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/Gaming Area.png" alt="Gaming Arena" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Gaming Arena</h3>
@@ -137,7 +137,7 @@ export const FacilitiesPage = () => {
                 <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
-                        <img src="/static/images/SNS College of Technology Web/TopRoof Dinning.png" alt="Rooftop Restaurant" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="/static/images/Dr. SNS Rajalakshmi College of Arts and Science Web/TopRoof Dinning.png" alt="Rooftop Restaurant" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-8 bg-white relative z-20">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Rooftop Dining</h3>

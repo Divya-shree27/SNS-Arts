@@ -27,7 +27,7 @@ export const MandatoryDisclosurePage = () => {
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">1</td>
                             <td class="border border-gray-300 px-4 py-3 font-semibold">NAME OF THE College</td>
-                            <td class="border border-gray-300 px-4 py-3">SNS College of Technology</td>
+                            <td class="border border-gray-300 px-4 py-3">Dr. SNS Rajalakshmi College of Arts and Science</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">2</td>
@@ -379,7 +379,7 @@ export const MandatoryDisclosurePage = () => {
     </section>
 
     <!-- CTA -->
-    <section class="py-16 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+    <section class="py-16 bg-gradient-to-r from-orange-600 to-[#B0CB1F] text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-4">Questions About Our Disclosures?</h2>
             <p class="text-xl mb-8">Contact our office for any queries regarding mandatory disclosures and documentation</p>
